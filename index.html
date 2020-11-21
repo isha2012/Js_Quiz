@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <!-- BOOTSTRAP CSS FRAME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+       <link rel="stylesheet" href="./style.css">
+ 
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+       <!--ICON-->
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+       <!--BOOTSTRAP JAVASCIPT -->
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header class="container">
+     <h1>Aptitude Test</h1>
+     <p>This is a simple Quiz Page using <strong>JavaScript</strong></p>
+     </header>
+
+     <section class="container">
+
+        <form name="quizForm" onsubmit="return submitAnswers()">
+            <h4>1. What least value must be assigned to * so that the number 197*5462 is divisible by 9 ?</h4>
+              <input type="radio" name="q1" value="a" id="q1a"> a. 2 <br>
+              <input type="radio" name="q1" value="b" id="q1b"> b. 3<br>
+              <input type="radio" name="q1" value="c" id="q1c"> c. 4<br>
+              <input type="radio" name="q1" value="d" id="q1d"> d. 7<br><br>
+
+              <p><button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#hint1" aria-expanded="false" aria-controls="collapseExample">Hint</button></p>
+              <div class="collapse" id="hint1">
+                 <div class="card card-body">A number is divisible by 9 if sum of its digit is divisible by 9</div>
+              </div><br>
+
+            <h4>2. Which digits should came in place of * and $ if the number 62684*$ is divisible by both 8 and 5 ?</h4>
+              <input type="radio" name="q2" value="a" id="q2a"> a. 0 and 4 respectively<br>
+              <input type="radio" name="q2" value="b" id="q2b"> b. 4 and 5 respectively<br>
+              <input type="radio" name="q2" value="c" id="q2c"> c. 4 and 0 respectively <br>
+              <input type="radio" name="q2" value="d" id="q2d"> d. None <br><br>
+
+              <p><button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#hint2" aria-expanded="false" aria-controls="collapseExample">Hint</button></p>
+              <div class="collapse" id="hint2">
+                 <div class="card card-body">A number divisible by 5 should end with 0 and 5, and a number divisble by 8 if number formed by the last three digits of the given number is divisible by 8.</div>
+              </div><br>
+
+            <h4>3. 1^3+2^3+3^3+4^3+.......+n^3</h4>
+              <input type="radio" name="q3" value="a" id="q3a"> a. n(n+1)/2 <br>
+              <input type="radio" name="q3" value="b" id="q3b"> b. n(n+1)(2n+1)/6<br>
+              <input type="radio" name="q3" value="c" id="q3c"> c. n^2*(n+1)^2/8<br>
+              <input type="radio" name="q3" value="d" id="q3d"> d. n^2*(n+1)^2/4<br><br>
+
+            
+            <h4>4. Evaluate 313*313 + 287*287</h4>
+              <input type="radio" name="q4" value="a" id="q4a"> a. 180337<br>
+              <input type="radio" name="q4" value="b" id="q4b"> b. 180338<br>
+              <input type="radio" name="q4" value="c" id="q4c"> c. 180339<br>
+              <input type="radio" name="q4" value="d" id="q4d"> d. 180340<br><br>
+
+              <p><button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#hint4" aria-expanded="false" aria-controls="collapseExample">Hint</button></p>
+              <div class="collapse" id="hint4">
+                 <div class="card card-body">a^2+b^2 = 1/2*[(a+b)^2+(a-b)^2]</div>
+              </div><br>
+             
+
+            <h4>5. On dividing 15968 by a certain number, the quotient is 89 and the remainder is 37. Find the divsisor ?</h4>
+              <input type="radio" name="q5" value="a" id="q5a"> a. 179<br>
+              <input type="radio" name="q5" value="b" id="q5b"> b. 180<br>
+              <input type="radio" name="q5" value="c" id="q5c"> c. 181<br>
+              <input type="radio" name="q5" value="d" id="q5d"> d. 178<br><br>
+
+             <p><button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#hint5" aria-expanded="false" aria-controls="collapseExample">Hint</button></p>
+              <div class="collapse" id="hint5">
+                 <div class="card card-body">Divisor = Dividend-Remainder/Quoitent</div>
+              </div><br>
+
+            <h4>6. Find the H.C.F of 2/3, 8/9, 16/81 and 10/27</h4>
+              <input type="radio" name="q6" value="a" id="q6a"> a. 5/81<br>
+              <input type="radio" name="q6" value="b" id="q6b"> b. 10/81<br>
+              <input type="radio" name="q6" value="c" id="q6c"> c. 2/81<br>
+              <input type="radio" name="q6" value="d" id="q6d"> d. None<br><br>
+
+              <p><button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#hint6" aria-expanded="false" aria-controls="collapseExample">Hint</button></p>
+              <div class="collapse" id="hint6">
+                 <div class="card card-body">H.C.F = H.C.F of numerators/L.C.M of denominators</div>
+              </div><br>
+
+            <h4>7. The smallest value of n, for which 2n+1 is not a prime number is</h4>
+              <input type="radio" name="q7" value="a" id="q7a"> a. 3<br>
+              <input type="radio" name="q7" value="b" id="q7b"> b. 4<br>
+              <input type="radio" name="q7" value="c" id="q7c"> c. 5<br>
+              <input type="radio" name="q7" value="d" id="q7d"> d. None of these<br><br>
+
+            <h4>8. (a+b+c)^2 is equal to </h4>
+               <input type="radio" name="q8" value="a" id="q8a"> a. a^2+b^2+c^2+2(ab + bc + ca)<br>
+               <input type="radio" name="q8" value="b" id="q8b"> b. (a+b+c)(a^2+b^2+c^2-ab-bc-ca)<br>
+               <input type="radio" name="q8" value="c" id="q8c"> c. both a and b<br>
+               <input type="radio" name="q8" value="d" id="q8d"> d. None <br><br>
+
+            <h4>9. Evaluate 5793405*9999 </h4>
+              <input type="radio" name="q9" value="a" id="q9a"> a. 524673751 <br>
+              <input type="radio" name="q9" value="b" id="q9b"> b. 524673749<br>
+              <input type="radio" name="q9" value="c" id="q9c"> c. 524673752<br>
+              <input type="radio" name="q9" value="d" id="q9d"> d. 524673750<br><br>
+
+              <p><button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#hint9" aria-expanded="false" aria-controls="collapseExample">Hint</button></p>
+              <div class="collapse" id="hint9">
+                 <div class="card card-body">9999=10000-1</div>
+              </div><br>
+
+            <h4>10. Which of the following are prime numbers ?</h4>
+              <input type="radio" name="q10" value="a" id="q10a"> a. 241 <br>
+              <input type="radio" name="q10" value="b" id="q10b"> b. 337<br>
+              <input type="radio" name="q10" value="c" id="q10c"> c. 391<br>
+              <input type="radio" name="q10" value="d" id="q10d"> d. 571<br><br>
+ 
+            <input type="submit" class="btn btn-success text-center" value="Submit">
+        </form>
+     </section>
+
+     <footer class="container">          
+           
+                <div class="row justify-content-center">
+                    <span>Designed By <strong>Patel Isha</strong></span>
+                 </div>
+      
+
+                <div class="row">
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                            <strong>Contacts</strong>
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id=100008357132686"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/isha-patel-020957189/"><i class="fa fa-linkedin "></i></a>                      
+                            <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/issha.__/?hl=en"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                  </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>© Copyright 2020 Aptitude Test</p>
+                    </div>
+                </div>
+         
+        </footer>
+
+        <script src="./myscript.js"></script> 
+</body>
+</html>
