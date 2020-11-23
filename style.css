@@ -1,5 +1,5 @@
 header {
-     background-color: #ff33cc;
+     background-color: #4dd2ff;
      height: 140px;
      
 }
@@ -25,14 +25,14 @@ button {
 }
 
 footer {
-   background-color: #ff33cc;
+   background-color: #4dd2ff;
    padding-top: 15px;
    padding-bottom: 15px;
    height: 120px;
 }
 
 section {
-   background-color:  #ff99e6;
+   background-color: #ccf2ff;
 }
 
 form {
